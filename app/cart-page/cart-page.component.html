@@ -1,0 +1,81 @@
+<div class="container mt-5 mb-5">
+
+    <div class="cartrow">
+
+        <div class="cartbox" *ngIf="menuData">
+            <a routerLink="/products" class="btn btn-sm btn-dark mb-3">Back</a>
+            <div class="cart-content">
+              <img class="cartimg" src="{{menuData[0].bagImg}}" width="400" height="400" />
+              <div class="cart-info">
+                <h1 class="cartname">{{menuData[0].bagName}}</h1>
+                <p class="cartdetails" style="margin-top: 5px;">{{menuData[0].bagDetails}}</p>
+                <p class="cartprice" style="margin-top: 5px;">{{menuData[0].bagPrice | currency :'INR'}}</p>
+              </div>
+            </div>
+          </div>
+
+  <ng-container *ngIf="true">
+    <div class="container">
+    <div class="cart-table">
+        <div class="cart-product">
+            <table class="table table-responsive">
+                <thead >
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Product Name</th>
+                        <th>Product Image</th>
+                        <th>description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Iphone</td>
+                        <td>Some Image</td>
+                        <td>this is the brand phone</td>
+                        <td>50,000</td>
+                        <td>1</td>
+                        <td>50,000</td>
+                        <td><button class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+  </ng-container>
+
+
+
+        <ng-container *ngIf="false">
+         <div class="cartcontainer">
+            <div class="card">
+                <h3 class="cart-title">My Cart</h3>
+            </div>
+            <div class="cartcenter">
+                <img src="" alt="">
+                <h3>Your cart is empty!</h3>
+                <h4>Add item to your cart</h4>
+            </div>
+            </div>
+        </ng-container>
+        
+
+
+        <div class="userdetails">
+            <h1 style="margin-left: 450px;">Enter Your Details</h1><br>
+            <form>
+
+                <input type="text" class="form-control" placeholder="Enter Your Full Name" />
+                <input type="text" class="form-control" placeholder="Enter Your Mobile" />
+                <textarea class="form-control" placeholder="Enter Your Address"></textarea>
+                <button class="btn btn-md btn-dark mt-3">Place Order</button><br>
+
+            </form>
+        </div>
+    </div> 

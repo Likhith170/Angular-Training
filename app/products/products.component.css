@@ -1,0 +1,23 @@
+/* product */
+
+  .bagbox {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 130px;
+  }
+
+  .item{
+    margin-right: 50px;
+  }
+
+
+  .buybtn{
+    color: white;
+    background-color:  #c14646;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 5px;
+    
+    margin: 63px;
+  }
